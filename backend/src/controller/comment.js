@@ -6,7 +6,7 @@ const createComment = async (req, res) => {
     const currentTopic = await Topic.findById(req.params.id);
     const newComment = await Comment.create(req.body);
 
-    currentTopic.Comment = newComment.id;
+    currentTopic.comments = newComment.id;
     currentTopic.save();
 
     res.status(201).json({ 
