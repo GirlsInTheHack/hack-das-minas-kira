@@ -1,9 +1,13 @@
 import './App.css';
 import Artigo from './Artigo.js';
+import Footer from './components/Footer'
 
 function App() {
   return (
-    <Artigo />
+    <div>
+      <Artigo />
+      <Footer />
+    </div>
   );
 }
 
