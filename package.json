@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "lint": "eslint . --ext .js --ignore-pattern node_modules/"
+    "lint": "eslint . --ext .js --ignore-pattern node_modules/",
+    "dev": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,7 @@
     "mongoose": "^6.4.2"
   },
   "devDependencies": {
-    "eslint": "^8.19.0"
+    "eslint": "^8.19.0",
+    "nodemon": "^2.0.18"
   }
 }

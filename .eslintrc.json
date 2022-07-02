@@ -11,19 +11,19 @@
     },
     "rules": {
         "indent": [
-            "error",
-            "tab"
+            "warn",
+            2
         ],
         "linebreak-style": [
-            "error",
+            "warn",
             "windows"
         ],
         "quotes": [
-            "error",
+            "warn",
             "single"
         ],
         "semi": [
-            "error",
+            "warn",
             "always"
         ]
     }
