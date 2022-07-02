@@ -2,18 +2,28 @@ const Topic = require('../model/forumTopic');
 const Comment = require('../model/comment');
 
 const createComment = async (req, res) => {
-  const currentTopic = await Topic.findById(req.params.id).catch((error) =>
-    res.status(404).json({ error: error.message })
-  );
+  try {
+    const currentTopic = await Topic.findById(req.params.id);
+    const newComment = await Comment.create(req.body);
 
-  const newComment = await Comment.create(req.body).catch((error) =>
-    res.status(400).json({ error: error.message })
-  );
+    currentTopic.Comment = newComment.id;
+    currentTopic.save();
 
-  currentTopic.Comment = newComment.id;
-  currentTopic.save();
+    res.status(201).json({ 
+      message: 'Cometário criado!', 
+      newComment 
+    });
+    
+  } catch (error) {
+    res.status(500).json({
+      message: error.message
+    });
+  }
+  
+  
+  
 
-  return res.status(201).json({ message: 'New comment created', newComment });
+  
 };
 
 module.exports = {
