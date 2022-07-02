@@ -19,11 +19,6 @@ const createComment = async (req, res) => {
       message: error.message
     });
   }
-  
-  
-  
-
-  
 };
 
 module.exports = {
