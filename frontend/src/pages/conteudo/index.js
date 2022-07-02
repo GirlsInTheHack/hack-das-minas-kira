@@ -1,10 +1,12 @@
 
 import YoutubeEmbed from '../../components/YoutubeEmbed';
 import { Video} from './styles';
+import Navbar from '../../components/Navbar';
 function Home (){
 
 return(
     <div className="App">
+        <Navbar></Navbar>
         <Video>
             <YoutubeEmbed></YoutubeEmbed>
         </Video>
