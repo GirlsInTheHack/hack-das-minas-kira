@@ -18,7 +18,7 @@ export const NavIcon = styled(Link)`
 `
 
 export const SideBarNav = styled.nav`
-    background: #15171c;
+    background: #231f20;
     width: 250px;
     height: 100vh;
     display: flex;
@@ -33,3 +33,25 @@ export const SideBarNav = styled.nav`
 export const SideBarWrap = styled.div`
     width: 100%;
 `
+
+export const SideBarLink = styled(Link)`
+    display: flex;
+    color: #e1e9fc;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px;
+    list-style: none;
+    height:60px;
+    text-decoration: none;
+    font-size: 18px;
+
+    &:hover {
+        backgroud: #252831;
+        color: #ff007f;
+        cursor: pointer;
+    }
+`
+
+export const SiderBarLabel = styled.span`
+    margin-left: 12px;
+`;
