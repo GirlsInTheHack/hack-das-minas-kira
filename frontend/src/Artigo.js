@@ -1,9 +1,11 @@
-import './Artigo.css';
+import React from "react";
+import YoutubeEmbed from "./components/YoutubeEmbed";
 
-function Artigo(){
-    return(
-        <div className="preto"></div>
-    );
-}   
-
-export default Artigo;
+export default function Artigo() {
+  return (
+    <div className="App">
+      <h1>Youtube Embed</h1>
+      <YoutubeEmbed embedId="CCM_lJuJSMA" />
+    </div>
+  );
+}
