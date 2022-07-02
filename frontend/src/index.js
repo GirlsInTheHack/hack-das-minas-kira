@@ -4,10 +4,15 @@ import './index.css';
 import Forum from './pages/conteudo';
 import Footer from './components/Footer'
 import reportWebVitals from './reportWebVitals';
+import Navbar from './components/Navbar';
+import { BrowserRouter as Router } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <Router>
+    <Navbar/>
+    </Router>
     <Forum />
     <Footer />
   </React.StrictMode>
