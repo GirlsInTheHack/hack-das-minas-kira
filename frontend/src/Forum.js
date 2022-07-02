@@ -3,7 +3,7 @@ import YoutubeEmbed from "./components/YoutubeEmbed";
 import Question from './components/Question'
 import Comment from './components/Comment'
 
-export default function Artigo() {
+export default function Forum() {
   return (
     <div className="App">
       <h1>Youtube Embed</h1>
