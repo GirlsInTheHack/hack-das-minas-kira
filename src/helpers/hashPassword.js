@@ -10,7 +10,7 @@ exports.hashPassword = async(password, res) => {
 	} catch (error) {
 		console.log(error);
 		res.status(500).json({
-			messagem: message.error
+			messagem: error.message
 		});
 	}
 };
