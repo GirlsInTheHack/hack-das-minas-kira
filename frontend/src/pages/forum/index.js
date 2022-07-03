@@ -2,6 +2,7 @@ import React from "react";
 import { Text, Data, Title, SubTitle } from "../forum/styles";
 
 import Comment from "../../components/Comment";
+import Question from "../../components/Question";
 
 
 export default function Forum() {
@@ -65,8 +66,7 @@ export default function Forum() {
       </Text>
       
       <Comment topicId="TODO-CONNECTION"/>
-      
-      
+      <Question destino="forum"></Question>
     </div>
   );
 }
