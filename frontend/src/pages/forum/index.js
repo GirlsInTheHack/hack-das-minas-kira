@@ -70,7 +70,7 @@ export default function Forum() {
       
       <Comment topicId={TOPIC_ID_PROTOTYPE}/>
       <Hr/>
-      <Input value="Digite seu comentário"/>
+      <Input />
       <Button>Enviar</Button>
       <Question destino="forum"></Question>
     </div>
