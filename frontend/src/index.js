@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Forum from './Forum';
+import Forum from './pages/conteudo';
 import Footer from './components/Footer'
 import reportWebVitals from './reportWebVitals';
 import Navbar from './components/Navbar';
