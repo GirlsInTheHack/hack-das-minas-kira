@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, Data, Title, SubTitle } from "../forum/styles";
+import { Text, Data, Title, SubTitle, Hr, Input, Button } from "../forum/styles";
 
 import Comment from "../../components/Comment";
 import Question from "../../components/Question";
@@ -68,6 +68,9 @@ export default function Forum() {
       </Text>
       
       <Comment topicId={TOPIC_ID_PROTOTYPE}/>
+      <Hr/>
+      <Input value="Digite seu comentário"/>
+      <Button>Enviar</Button>
       <Question destino="forum"></Question>
     </div>
   );
