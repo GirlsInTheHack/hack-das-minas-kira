@@ -1,5 +1,5 @@
-const Topic = require('../model/forumTopic');
-const Comment = require('../model/comment');
+const Topic = require("../model/forumTopic");
+const Comment = require("../model/comment");
 
 const createComment = async (req, res) => {
   try {
@@ -9,18 +9,29 @@ const createComment = async (req, res) => {
     currentTopic.comments = newComment.id;
     currentTopic.save();
 
-    res.status(201).json({ 
-      message: 'Cometário criado!', 
-      newComment 
+    return res.status(201).json({
+      message: "Cometário criado!",
+      newComment,
     });
-    
   } catch (error) {
-    res.status(500).json({
-      message: error.message
+    return res.status(500).json({
+      message: error.message,
     });
   }
 };
 
+const getAll = async (req, res) => {
+  try {
+    const commentRequested = await Comment.find().populate('userCreator');
+
+    return res.status(201).json(commentRequested);
+  } catch (error) {
+    return res.status(500).json({
+      message: error.message,
+    });
+  }
+};
 module.exports = {
   createComment,
+  getAll
 };

@@ -5,5 +5,6 @@ const controller = require('../controller/forumTopic');
 
 router.post('/create', controller.createTopic);
 router.get('/topics/:id', controller.getTopicById);
+router.get('/all', controller.getAll);
 
 module.exports = router;
