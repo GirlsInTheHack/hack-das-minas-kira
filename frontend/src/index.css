@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'Kotex';
+  src: local('Kotex'), url(./fonts/Kotex-Light.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Kotex-Bold';
+  src: local('Kotex-Bold'), url(./fonts/Kotex-Bold.woff) format('woff');
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
