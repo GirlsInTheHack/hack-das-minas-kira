@@ -6,10 +6,12 @@ export const Nav = styled.div`
    display: flex;
    justify-content: flex-end;
    align-items: center;
+   box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
 `
 
 export const NavIcon = styled(Link)`
-    margin-left: 2rem;
+    margin-left: 10px;
+    margin-right: 25px;
     font-size: 2rem;
     height: 80px;
     display: flex;
