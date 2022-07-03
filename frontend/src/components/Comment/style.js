@@ -8,12 +8,24 @@ export const Container = styled.div`
 
 export const User = styled.div`
   margin: 2% 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: middle;
+  min-height: 100%;
 `;
 
-export const CommentContainer = styled.div`
-  margin: auto;
+export const Box = styled.div`
   border: 2px transparent;
   border-radius: 0 0 10px 0;
   box-shadow: -3px 6px 12px 0px rgba(0, 0, 0, 0.1);
   padding: 5px;
+  min-width: 80%;
+  min-height: 100%;
+`;
+
+export const Text = styled.p`
+  text-align: center;
+  vertical-align: middle;
+  align-items: center;
 `;

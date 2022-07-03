@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios";
-import { Container, CommentContainer, User } from "./style";
+import { Container, Box, User, Text } from "./style";
 import { HiOutlineUserCircle } from "react-icons/hi";
 import PropTypes from "prop-types";
 
@@ -24,7 +24,7 @@ const Comment = ({ topicId }) => {
             <HiOutlineUserCircle />
             {comment.userCreator.name}
           </User>
-          <CommentContainer>{comment.comment}</CommentContainer>
+          <Box><Text>{comment.comment}</Text></Box>
         </Container>
       ))}
     </>
