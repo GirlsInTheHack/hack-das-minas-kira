@@ -5,13 +5,13 @@ import * as BiIcons from "react-icons/bi";
 export const NavbarData = [
     {
     title: "home",
-    path: "/home",
+    path: "/",
     icon: <BiIcons.BiHome/>,
     cName: 'nav-text'
     },
     {
         title:"calendário",
-        path: "/calendario",
+        path: "/",
         icon: <BiIcons.BiCalendar />,
         cName: 'nav-text'
     },
@@ -23,7 +23,7 @@ export const NavbarData = [
     },
     {
         title: "chama a kira",
-        path: "/chama",
+        path: "/",
         icon: <BiIcons.BiChat />,
         cName: 'nav-text'
     }

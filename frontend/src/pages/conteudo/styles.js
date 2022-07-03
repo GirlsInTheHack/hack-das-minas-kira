@@ -68,5 +68,6 @@ export const Alert = styled.p`
     font-size:14px;
     margin:2% 10% 7% 10%;
     text-align:left;
-    font-family:Kotex-bold;
+    font-family:Kotex-Bold;
+    padding-top: 20px;
     `;

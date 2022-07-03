@@ -31,7 +31,7 @@ function Home() {
         </ButtonRight>
         
       </ButtonDiv>
-      <Question></Question>
+      <Question destino="forum"></Question>
       <Alert>O conteúdo oferecido pela Kira não substitui um consulta médica.</Alert>
     </div>
   );
