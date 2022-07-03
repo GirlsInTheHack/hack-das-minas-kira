@@ -1,6 +1,7 @@
 import YoutubeEmbed from "../../components/YoutubeEmbed";
 import { Video, Button } from "./styles";
 import { BsFillBookmarkFill, BsFillShareFill } from "react-icons/bs";
+import Question from "../../components/Question";
 
 function Home() {
   return (
@@ -25,6 +26,8 @@ function Home() {
           <BsFillBookmarkFill /> Favoritar
         </Button>
       </div>
+      <Question></Question>
+      <p>O conteúdo oferecido pela Kira não substitui um consulta médica.</p>
     </div>
   );
 }
