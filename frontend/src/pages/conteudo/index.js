@@ -5,7 +5,6 @@ import { BsFillBookmarkFill, BsFillShareFill } from "react-icons/bs";
 function Home() {
   return (
     <div className="App">
-      <Navbar></Navbar>
       <Video>
         <YoutubeEmbed></YoutubeEmbed>
       </Video>

@@ -19,3 +19,9 @@ export const Button = styled.button`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 `;
+
+export const Img = styled.img`
+background-image: linear-gradient(45deg, #ff00bb, #ea1b23);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+`
