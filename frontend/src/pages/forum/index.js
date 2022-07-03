@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, Data, Title, SubTitle, Hr, Input, Button } from "../forum/styles";
+import { Text, Data, Title, SubTitle, Hr, Input, Button, Img } from "../forum/styles";
 
 import Comment from "../../components/Comment";
 import Question from "../../components/Question";
@@ -9,6 +9,7 @@ export default function Forum() {
   return (
     <div className="App">
       <Title>Métodos contraceptivos naturais funcionam?</Title>
+      <Img src="./images/kira.png"/>
       <Data>31 de janeiro de 2022</Data>
       <Text>
       Métodos contraceptivos naturais são tão antigos que se você perguntar para a sua avó,

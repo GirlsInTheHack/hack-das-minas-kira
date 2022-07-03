@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const Title = styled.h1`
     margin:2% 10% 2% 10%;
     margin-left:10%;
-    text-align: center;
+    text-align: left;
     font-family:Kotex;
 `
 
@@ -20,7 +20,8 @@ export const Text = styled.p`
 export const Data = styled.p`
     font-size:12px;
     font-family: Kotex;
-    text-align:center;
+    margin:2% 10% 2% 10%;
+    text-align:left;
 `;
 
 export const SubTitle = styled.h5`
@@ -61,3 +62,13 @@ cursor: pointer;
 box-shadow: 2px 3px 3px 2px rgba(0, 0, 0, 0.1);
 color: white;
 `;
+
+export const Img = styled.img`
+    margin-right: 63%;
+    margin-top: 15px;
+    width: 70px;
+
+    @media (min-width: 1024px) {
+        margin-right: 75%;
+    }
+`
