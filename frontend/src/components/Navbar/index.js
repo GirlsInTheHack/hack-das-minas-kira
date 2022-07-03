@@ -15,6 +15,7 @@ const Navbar = () => {
         <div>
             <IconContext.Provider value={{color: '#626162', size: '20px'}}>
             <Nav>
+                <AiIcons.AiOutlineLeft/>
                 <NavIcon to="#">
                      <FaIcons.FaBars onClick={showNavbar}/>
                 </NavIcon>
