@@ -4,18 +4,20 @@ import { Container, Box, User, Text } from "./style";
 import { HiOutlineUserCircle } from "react-icons/hi";
 import PropTypes from "prop-types";
 
-const baseURL = "http://localhost:8990/comments/all";
+const baseURL = "http://localhost:8990/forum/topic/";
 
 const Comment = ({ topicId }) => {
-  const [comments, setcomments] = React.useState(null);
+  const [topic, setcomments] = React.useState(null);
 
   React.useEffect(() => {
-    axios.get(`${baseURL}`).then((response) => {
+    axios.get(`${baseURL}${topicId}`).then((response) => {
       setcomments(response.data);
     });
   }, []);
 
-  if (!comments) return null;
+  if (!topic) return null;
+  console.log(topic)
+  const comments = topic.comments;
   return (
     <>
       {comments.map((comment) => (

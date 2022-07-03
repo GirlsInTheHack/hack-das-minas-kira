@@ -4,6 +4,8 @@ import { Text, Data, Title, SubTitle } from "../forum/styles";
 import Comment from "../../components/Comment";
 import Question from "../../components/Question";
 
+const TOPIC_ID_PROTOTYPE =  '62c19fedf4bf50f258939a9a';
+
 
 export default function Forum() {
   return (
@@ -65,7 +67,7 @@ export default function Forum() {
       Você pode conversar com seu ginecologista para perguntar sobre outras opções. Atualmente, existem métodos contraceptivos que duram 10 anos com alta eficácia, como o DIU de cobre. O importante é estar bem informada e segura das suas escolhas 😉
       </Text>
       
-      <Comment topicId="TODO-CONNECTION"/>
+      <Comment topicId={TOPIC_ID_PROTOTYPE}/>
       <Question destino="forum"></Question>
     </div>
   );
