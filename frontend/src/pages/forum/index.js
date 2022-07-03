@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, Data, Title, SubTitle } from "../forum/styles";
+import { Text, Data, Title, SubTitle, Hr, Input, Button } from "../forum/styles";
 
 import Comment from "../../components/Comment";
 import Question from "../../components/Question";
@@ -64,8 +64,10 @@ export default function Forum() {
       <Text>
       Você pode conversar com seu ginecologista para perguntar sobre outras opções. Atualmente, existem métodos contraceptivos que duram 10 anos com alta eficácia, como o DIU de cobre. O importante é estar bem informada e segura das suas escolhas 😉
       </Text>
-      
+      <Hr/>
       <Comment topicId="TODO-CONNECTION"/>
+      <Input value="Digite seu comentário"/>
+      <Button>Enviar</Button>
       <Question destino="forum"></Question>
     </div>
   );
