@@ -13,7 +13,7 @@ export const NavIcon = styled(Link)`
     margin-left: 10px;
     margin-right: 25px;
     font-size: 2rem;
-    height: 80px;
+    height: 60px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -34,6 +34,7 @@ export const SideBarNav = styled.nav`
 
 export const SideBarWrap = styled.div`
     width: 100%;
+    padding: 20px;
 `
 
 export const SideBarLink = styled(Link)`
@@ -41,9 +42,9 @@ export const SideBarLink = styled(Link)`
     color: #e1e9fc;
     justify-content: space-between;
     align-items: center;
-    padding: 1px;
+    padding: 5px;
     list-style: none;
-    height:60px;
+    height:45px;
     text-decoration: none;
     font-size: 18px;
 
@@ -57,3 +58,15 @@ export const SideBarLink = styled(Link)`
 export const SiderBarLabel = styled.span`
     margin-left: 12px;
 `;
+
+
+export const Hr = styled.hr`
+display: block; 
+margin-before: 0.5em; 
+margin-after: 0.5em; 
+margin-start: auto; 
+margin-end: auto; 
+overflow: hidden; 
+border-style: inset; 
+border-width: 1px;
+`
