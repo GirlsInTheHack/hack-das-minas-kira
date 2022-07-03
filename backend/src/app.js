@@ -14,10 +14,12 @@ app.use(express.json());
 
 const user = require('./routes/user');
 const topics = require('./routes/forumTopic');
+const comments = require('./routes/comment')
 
 
 app.use('/user', user);
 app.use('/forum', topics);
+app.use('/comments', comments)
 
 
 

@@ -28,7 +28,21 @@ const getTopicById = async (req, res) => {
   }
 };
 
+const getAll = async (req, res) => {
+  try {
+    const topicRequested = await Topic.find();
+    if (!topicRequested) {
+      return res.sendStatus(404);
+    }
+
+    return res.status(200).json(topicRequested);
+  } catch (error) {
+    return res.status(500).json({ message: error.message });
+  }
+};
+
 module.exports = {
   createTopic,
-  getTopicById
+  getTopicById,
+  getAll
 };

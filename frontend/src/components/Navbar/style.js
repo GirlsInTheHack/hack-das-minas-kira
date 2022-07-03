@@ -2,10 +2,11 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const Nav = styled.div`
-   height:80px;
+   height:40px;
    display: flex;
-   justify-content: flex-end;
+   justify-content: space-between;
    align-items: center;
+   padding: 10px;
    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
 `
 
