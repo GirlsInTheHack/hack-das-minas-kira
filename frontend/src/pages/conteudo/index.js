@@ -1,7 +1,8 @@
 
 import YoutubeEmbed from '../../components/YoutubeEmbed';
-import { Video} from './styles';
+import { Video } from './styles';
 import Navbar from '../../components/Navbar';
+
 function Home (){
 
 return(
@@ -15,6 +16,7 @@ return(
         <h6>Lorem ipsum quis sollicitudin aenean ornare amet est suspendisse luctus lobortis,
             ligula lorem elit habitant diam tristique vulputate praesent libero scelerisque,
             morbi erat scelerisque sagittis integer conubia sollicitudin condimentum habitasse.</h6>
+       
             
         
     </div>

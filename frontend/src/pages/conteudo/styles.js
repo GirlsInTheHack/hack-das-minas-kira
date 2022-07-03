@@ -11,5 +11,11 @@ export const Video = styled.div `
         margin:auto
           
     }`
+export const Button = styled.button `
+{
+   
+    outline:none;
+      
+}`
     
 
