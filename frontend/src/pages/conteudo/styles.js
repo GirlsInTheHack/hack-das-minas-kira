@@ -39,7 +39,7 @@ export const Img = styled.img`
 
 export const TitleVideo = styled.h2`
     font-family: Kotex-Bold;
-    font-size:33px;
+    font-size:28px;
     text-align:left;
     margin:5% 10% 0 10%;
     letter-spacing: 0.5%;

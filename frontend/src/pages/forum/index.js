@@ -12,6 +12,7 @@ export default function Forum() {
       <YoutubeEmbed embedId="CCM_lJuJSMA" />
       <Comment topicId="TODO-CONNECTION"/>
       <Question destino=""/>
+      <div><img src='./images/kira.png' /></div>
     </div>
   );
 }
