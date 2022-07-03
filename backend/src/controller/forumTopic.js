@@ -17,7 +17,12 @@ const createTopic = async (req, res) => {
 
 const getTopicById = async (req, res) => {
   try {
-    const topicRequested = await Topic.findById(req.params.id).populate('comments');
+    const topicRequested = await Topic.findById(req.params.id).populate({
+      path : 'comments',
+      populate : {
+        path : 'userCreator'
+      }
+    })
     if (!topicRequested) {
       return res.sendStatus(404);
     }

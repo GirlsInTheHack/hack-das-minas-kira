@@ -9,11 +9,7 @@ const CommentSchema = new mongoose.Schema(
     comment: {
       type: String,
       required: true,
-    },
-    forumTopic: {
-      type:mongoose.Schema.Types.ObjectId,
-      ref: 'Topic'
-    },
+    }
   },
   { timestamps: true }
 );

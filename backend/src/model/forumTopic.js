@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 const topicSchema = new mongoose.Schema(
   {
@@ -10,18 +10,20 @@ const topicSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    comments: {
-      type:mongoose.Schema.Types.ObjectId,
-      ref: 'Comments'
-    },
+    comments: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Comment",
+      },
+    ],
     likes: {
       type: Number,
-      default: 0
-    }
+      default: 0,
+    },
   },
   { timestamps: true }
 );
 
-const Topic = mongoose.model('Topic', topicSchema);
+const Topic = mongoose.model("Topic", topicSchema);
 
 module.exports = Topic;

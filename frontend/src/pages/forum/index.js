@@ -4,6 +4,8 @@ import { Text, Data, Title, SubTitle, Hr, Input, Button, Img } from "../forum/st
 import Comment from "../../components/Comment";
 import Question from "../../components/Question";
 
+const TOPIC_ID_PROTOTYPE =  '62c19fedf4bf50f258939a9a';
+
 
 export default function Forum() {
   return (
@@ -65,8 +67,9 @@ export default function Forum() {
       <Text>
       Você pode conversar com seu ginecologista para perguntar sobre outras opções. Atualmente, existem métodos contraceptivos que duram 10 anos com alta eficácia, como o DIU de cobre. O importante é estar bem informada e segura das suas escolhas 😉
       </Text>
+      
+      <Comment topicId={TOPIC_ID_PROTOTYPE}/>
       <Hr/>
-      <Comment topicId="TODO-CONNECTION"/>
       <Input value="Digite seu comentário"/>
       <Button>Enviar</Button>
       <Question destino="forum"></Question>
